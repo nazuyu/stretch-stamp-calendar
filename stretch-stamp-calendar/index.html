@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Workout Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ① ブロック1 -->
+<div class="block1">
+  <h1 contenteditable="true">トレーニング管理</h1>
+</div>
+
+
+<!-- ② ブロック2 -->
+<div class="block2">
+
+  <div class="video-grid">
+
+    <!-- 列テンプレ -->
+    <div class="column">
+      <h2 contenteditable="true">うで</h2>
+      <div class="table-body"></div>
+      <div class="add-row">＋</div>
+    </div>
+
+    <div class="column">
+      <h2 contenteditable="true">Hit</h2>
+      <div class="table-body"></div>
+      <div class="add-row">＋</div>
+    </div>
+
+    <div class="column">
+      <h2 contenteditable="true">おなか</h2>
+      <div class="table-body"></div>
+      <div class="add-row">＋</div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ③ ブロック3 -->
+<div class="calendar-wrapper">
+
+  <div class="calendar-header">
+    <h2>
+      <select id="yearSelect" class="year-select"></select>
+      年
+      <select id="monthSelect" class="year-select"></select>
+      月
+    </h2>
+  </div>
+
+  <div class="week-header">
+    <div>Sun</div><div>Mon</div><div>Tue</div>
+    <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+
+  <div id="calendar" class="calendar"></div>
+
+  <div class="calendar-footer">
+    <button id="refreshBtn">更新</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
